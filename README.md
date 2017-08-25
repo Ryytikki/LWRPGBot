@@ -1,5 +1,5 @@
-# rpBot
-Discord bot for lightweight RPGs
+# LWRPGBot
+Discord bot for Light Weight RPG
 
 Todo:
 * Dice rolling
