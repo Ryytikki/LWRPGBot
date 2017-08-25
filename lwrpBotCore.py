@@ -8,7 +8,9 @@ import random
 
 from server import *
 
-startup_extensions = ["charSheets"]
+startup_extensions = ["charSheets", "map"]
+
+currentState = {'mapType'   :   0}
 
 myBot = Bot(command_prefix="!")
 server = discord.Server(id = serverID)

@@ -17,11 +17,11 @@ charSheet = {'ID'       :   0,
 charList = []
 
 def saveChars():
-    with open('charList.pkl', 'wb+') as f:
+    with open('./data/charList.pkl', 'wb+') as f:
         pickle.dump(charList, f, pickle.HIGHEST_PROTOCOL)
 
 def loadChars():
-    with open('charList.pkl', 'rb') as f:
+    with open('./data/charList.pkl', 'rb') as f:
         global charList 
         charList = pickle.load(f)
         
@@ -123,7 +123,7 @@ class charSheets():
                 return
     
     @commands.command()           
-    async def Chars(self):
+    async def listChars(self):
         global charList
         output = ""
         for char in charList:
