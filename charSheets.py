@@ -12,7 +12,9 @@ charSheet = {'ID'       :   0,
              'int'      :   0,
              'cun'      :   0,
              'luc'      :   0,
-             'bra'      :   0}
+             'bra'      :   0,
+             'init'     :   0,
+             'res'      :   0}
              
 charList = []
 
@@ -109,8 +111,10 @@ class charSheets():
                 char['cun'] = args[2]
                 char['luc'] = args[3]
                 char['bra'] = args[4]
+                char['init'] = args[5]
+                char['res'] = args[6]
                 saveChars()
-                await self.bot.say("Stats set to: STR {0}/INT {1}/CUN {2}/LUC {3}/BRA {4}".format(args[0], args[1], args[2], args[3], args[4]))
+                await self.bot.say("Stats set to: STR {0}/INT {1}/CUN {2}/LUC {3}/BRA {4}/INIT {5}/DEF {6}".format(args[0], args[1], args[2], args[3], args[4], args[5], args[6]))
                 return
                 
     @commands.command(pass_context = True)           
