@@ -12,6 +12,7 @@ Todo:
 * character sheets
   * ~~Name/Token/Stats/Bio~~
   * ~~Have command that lets you modify any stat~~
+  * Add initiative
   * Delete sheets
 * Map creation
   * External script that produces ASCII code
